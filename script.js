@@ -1,8 +1,6 @@
     var money = +prompt("Ваш б'юджет на місяць?"),
         time = prompt("Ведіть дату в форматі YYYY-MM-DD");
 
-
-
     var appData = {
         badget : money,
         timeData : time,
@@ -11,9 +9,6 @@
         income : [],
         savings : false
     };
-
-    add();
-       function add() {  
            
         for(var i = 0; i < 2; i++) {     
             var a = prompt("Ведіть росходи за цей місяць"),
@@ -26,14 +21,8 @@
             appData.expenses[a] = b;
             break;
         } else {
-         console.log("dwadwa")
-         add();
-            //    for(var j = 0; j < 2; j++) {
-        //     var a = +prompt("Ведіть росходи за цей місяць"),
-        //         b = prompt("Скільки ви витратите?");
-        //    }
+         i = i - 1;
         
-        }
     }
  }
 
